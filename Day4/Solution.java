@@ -2,18 +2,27 @@
 
 class Solution {
     public int countPrimes(int n) {
-        int p[]=new int[n+1];
+        boolean p[]=new boolean[n];
+        int c=0;
         for(int i=2;i<n;i++)
         {
-            if(p[i]==0)
+            p[i]=true;
+        }
+        for(int i=2;i*i<n;i++)
+        {
+            if(p[i])
             {
-                p[0]++;
-                for(int j=i*2;j<n;j+=i)
+                for(int j=i*i;j<n;j+=i)
                 {
-                    p[j]=1;
+                    p[j]=false;
                 }
             }
         }
-        return p[0];
+        for(int i=2;i<n;i++)
+        {
+            if(p[i])
+            c++;
+        }
+        return c;
     }
 }
