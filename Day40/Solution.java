@@ -14,5 +14,3 @@ class Solution {
         return t;
     }
 }
-
-https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/
