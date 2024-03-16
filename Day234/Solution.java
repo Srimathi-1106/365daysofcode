@@ -28,7 +28,8 @@ class Solution {
 class Solution {
     public int findMaxLength(int[] nums) {
         int n=nums.length;
-        int prevSum[]=new int[2*n+1];// 2*n+1 to represent negative and positive 0 to n-1 index points negative currSum and n+1 to 2*n+1 points to positive currSum and n points to 0th index
+        int prevSum[]=new int[2*n+1];// 2*n+1 to represent negative and positive currSum
+                                     // 0 to n-1 index points negative currSum and n+1 to 2*n+1 points to positive currSum and n points to 0th index
         Arrays.fill(prevSum,-2);
         prevSum[n]=-1;
         int max=0,currSum=0;
