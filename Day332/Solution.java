@@ -1,4 +1,4 @@
-LEETCODE PROBLEM - 1248. Count Number of Nice Subarrays
+// LEETCODE PROBLEM - 1248. Count Number of Nice Subarrays
 
 class Solution {
     public int numberOfSubarrays(int[] nums, int k) {
