@@ -1,4 +1,4 @@
-// LEETCODE PROBLEM - https://leetcode.com/problems/pass-the-pillow/description/
+// LEETCODE PROBLEM - 2582. Pass the Pillow
 
 class Solution {
     public int passThePillow(int n, int time) {
