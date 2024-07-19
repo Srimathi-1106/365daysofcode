@@ -27,8 +27,6 @@ class Solution {
             if(isLucky)
             luckyNumbers.add(min);
         }
-        
         return luckyNumbers;
-
     }
 }
